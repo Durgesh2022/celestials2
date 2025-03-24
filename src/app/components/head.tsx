@@ -1,3 +1,4 @@
+import Image from "next/image";
 
 export default function Home() {
   return (
@@ -29,10 +30,12 @@ export default function Home() {
 
       {/* Right Section - Image */}
       <div className="md:w-1/2 flex justify-center mt-6 md:mt-0">
-        <img
+        <Image
           src="/background (1).png"
           alt="Tech Illustration"
           className="w-full max-w-3xl" // Adjust size as needed
+          width={200}
+          height={200}
         />
       </div>
     </div>

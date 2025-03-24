@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 
 export default function AboutUs() {
   return (
@@ -9,10 +11,12 @@ export default function AboutUs() {
        <div className="flex flex-col md:flex-row items-center justify-between min-h-screen p-8 ">
       {/* Left Section */}
       <div className="md:w-1/2 flex justify-center mt-6 md:mt-0">
-        <img
+        <Image
           src="/image2.png"
           alt="Tech Illustration"
           className="w-full max-w-3xl" // Adjust size as needed
+          width={200}
+          height={200}
         />
       </div>
       <div className="md:w-1/2 text-center md:text-left space-y-6">
